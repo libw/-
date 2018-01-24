@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://www.coin2p.com/user/login/findpassword.html -->
+<html class=" js no-mobile desktop no-ie chrome chrome63 user-section login-section w-1920 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 gt-1440 gt-1680 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface" id="findpassword-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>忘记密码</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta name="author" content="ThinkCMF">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Set render engine for 360 browser -->
+<meta name="renderer" content="webkit">
+
+<!-- No Baidu Siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<!-- HTML5 shim for IE8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="./忘记密码_files/favicon.ico" type="image/ico">
+<link href="./忘记密码_files/bootstrap.min.css" rel="stylesheet">
+<link href="./忘记密码_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="/themes/simpleboot3/public/assets/simpleboot3/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link href="./忘记密码_files/style.css" rel="stylesheet">
+<style>
+    /*html{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}*/
+    #backtotop {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+        font-size: 50px;
+        z-index: 9999;
+    }
+
+    #backtotop:hover {
+        color: #333
+    }
+    /*修改*/
+    #main-menu-user li.user {
+        display: none
+    }
+
+    .navbar-nav{
+        box-sizing: border-box;
+    }
+    .navbar-nav>li>a{
+
+        padding: 0 20px;
+        height: 68px;
+        line-height: 68px;
+    }
+    .navbar-nav>li>a:hover{
+        text-decoration: none;
+    }
+    .active>a{
+        color: rgba(217,186,131,1);
+        border-bottom: 2px solid rgba(217,186,131,1);
+    }
+    body{
+        background-color: #484c58!important;
+    }
+    ul,li{
+        list-style: none;
+    }
+    .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+
+        border-color: rgba(217,186,131,1);
+    }
+    .navbar-color{
+        background-color: transparent!important;
+    }
+    .navbar{
+        min-height: 68px;
+        margin-bottom: 0;
+    }
+    #main-menu{
+        margin-left: 100px;
+    }
+    .menu-item:hover{
+        background-color: transparent;
+    }
+    .menu-item>a{
+        font-size:18px;
+        color:rgba(152,152,152,1);
+    }
+    .menu-item>a:hover{
+        box-sizing: border-box;
+        border-bottom: 2px solid rgba(217,186,131,1);
+        color: rgba(217,186,131,1);
+    }
+    .new-container{
+        width: 100%;
+        height:68px;
+        background:rgba(45,49,59,0.9);
+    }
+    .offline{
+        margin-right: 15px;
+
+    }
+    .nav>.offline>a{
+        transition: 0.5s all;
+    }
+
+    .nav>li>a:hover, .nav>li>a:focus {
+
+        background-color: transparent;
+
+    }
+    .nav>.offline>a:hover,.nav>.offline>a:focus,.nav>.offline>a:focus{
+        background-color: rgba(217,186,131,0.8);
+        opacity: 0.8;
+        color: #fff;
+
+    }
+    .new-user{
+        width: 240px;
+        color:rgba(255,255,255,1);
+        font-size:18px;
+        line-height: 68px;
+        text-align: center;
+        background-color: rgba(217,186,131,1);
+    }
+    .new-lanuage{
+
+        color:rgba(255,255,255,1);
+        font-size:18px;
+        line-height: 68px;
+        text-align: center;
+
+    }
+    .new-dropdown{
+        float: right;
+        margin-right: 40px;
+    }
+    .new-dropdown>a{
+        text-decoration: none;
+        color:rgba(217,186,131,1);
+    }
+    .new-dropdown>a:hover, a:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+    .dropdown-menu{
+        min-width: 125px;
+        /*height: 96px;*/
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: rgba(45,49,59,0.9);
+    }
+    .dropdown-menu.pull-right {
+        right: 260px;
+        left: auto;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .dropdown-menu>li{
+        height: 48px;
+    }
+    .dropdown-menu>li>a{
+        line-height: 48px;
+        color: rgba(217,186,131,1);
+        padding: 0;
+        padding-left: 15px;
+    }
+    .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+
+        background:rgba(217,186,131,1);
+    }
+
+    .regcontainer{
+        width: 1200px;
+        height: 575px;
+        background:rgba(45,49,59,1);
+        margin: 40px auto;
+        padding-top: 16px;
+
+    }
+    .text-center{
+        font-size:24px;
+        color:rgba(217,186,131,1);
+        line-height: 72px;
+        font-weight: bold;
+    }
+    .regcontainer input{
+        background-color: transparent;
+        border: 1px solid #484c58;
+        border-radius: 5px;
+    }
+    .regcontainer input:focus{
+        border-color: rgba(217,186,131,1);
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    #authCode{
+        width: 100%;
+    }
+    .form-control{
+        height: 42px;
+    }
+    .authCodef>img{
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        height: 40px;
+        border-radius: 0 4px 4px 0;
+    }
+    .phone{
+        height: 42px;
+        width: 100%;
+    }
+    .phone>input{
+        width: 240px;
+        float: right;
+    }
+    .phone>a{
+        display: block;
+        width: 120px;
+        height: 42px;
+        border: 1px solid #484c58;
+        text-align: center;
+        line-height: 42px;
+        border-radius: 5px;
+        float: left;
+        color: #999;
+    }
+
+
+
+    .phoneCode>a{
+        float: right;
+        width: 160px;
+        height: 42px;
+        border: 1px solid #484c58;
+        background-color: transparent;
+        border-radius: 5px;
+        color: #999;
+        line-height: 24px;
+        transition: 0.5s all;
+    }
+    .phoneCode>a:hover{
+        background-color: rgba(217,186,131,1);
+        border-color: rgba(217,186,131,1);
+
+    }
+    .phoneCode{
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .regSubmit>button{
+        background-color: rgba(217,186,131,1);
+        width: 100%;
+        height: 42px;
+        border-radius: 5px;
+        border: 0;
+        font-weight: bold;
+        transition: 0.5s all;
+    }
+    .regSubmit>button:hover{
+        background-color: rgba(217,186,131,0.8);
+    }
+
+
+    .footer{
+        width: 100%;
+        height: 300px;
+        background-color: #23262e;
+        padding-top: 64px;
+        font-size: 14px;
+        border-top: 10px solid rgba(217,186,131,1);
+    }
+    .footer p{
+        margin: 0;
+    }
+    .footerLink{
+        color:rgba(152,152,152,1);
+        margin-bottom: 26px;
+    }
+    .footerLink>span{
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 60px;
+    }
+    .footerLink>a{
+        color: #999;
+        padding: 0 40px;
+        border-right: 1px solid #484c58;
+    }
+    .footerLink>a:last-child{
+        border-right: none;
+    }
+    .footerLink>a:hover{
+        color: rgba(152,152,152,0.8);
+    }
+    .footerLeft>p{
+        color:#A7A7A7;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footerContent{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .footerLeft{
+        float: left;
+        width: 730px;
+        border-right: 1px solid #484c58;
+        margin-right: 40px;
+    }
+    .footerLeft>ul{
+        display: block;
+        padding-left: 0;
+        line-height: 105px;
+        list-style: none;
+        width: 100%;
+        height: 98px;
+    }
+    .footerLeft>ul>li{
+        float: left;
+        margin-right: 100px;
+    }
+    .footerLeft>ul>li>a{
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+    }
+    .footerLeft>ul>li>a:hover{
+        opacity: 0.8;
+    }
+    .footerLeft>p{
+        font-size: 12px;
+        line-height: 20px;
+        color:rgba(167,167,167,1);
+    }
+    .footerRight{
+        float: left;
+        width: 420px;
+    }
+    .footerRight>img{
+        display: block;
+    }
+    .kong{
+        width: 100%;
+        height: 24px;
+    }
+    .footerRight>img{
+        width: 200px;
+        height: 70px;
+    }
+    .footerRight>span{
+        font-size: 18px;
+        color:#999;
+        line-height: 64px;
+        margin-top: 20px;
+        display: block;
+    }
+    .footerRight>ul{
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        color:#999;
+        margin-top: -20px;
+    }
+    .footerRight>ul>li{
+        float: left;
+        width: 110px;
+        height: 40px;
+        margin-right: 15px;
+        padding-top: 20px;
+    }
+    .footerRight>ul>li:last-child{
+        width: 50px;
+        padding-top: 0;
+    }
+    .footerRight>ul>li:first-child{
+        width: 90px;
+    }
+    .regcontainer input{
+        color: #fff;
+    }
+
+    /*头部二次修改*/
+    #main-menu{  width: 1200px;
+        margin: 0 auto;  display: block;  }
+    .navpos{  position: relative;  }
+    .navbar-nav{  float: none;  }
+    .navr{  position: absolute;
+        right: 0;
+        top: 0;  }
+    .navbar .nav .user {  line-height: 0;  }
+    .navbar .nav .user .headicon{  height: 24px;  }
+    .new-user{  width: 240px;
+        color:rgba(255,255,255,1);
+        font-size:18px;
+        line-height: 68px;
+        text-align: center;
+        background-color: rgba(217,186,131,1);  }
+    .new-user1{  width: 240px;
+        color:rgba(255,255,255,1);
+        font-size:18px;
+        line-height: 68px;
+        padding-left: 10px;
+        display: inline-block;  }
+    .new-user1>img{  float: left;
+        margin-top: 18px!important;  }
+    .new-user1>span{  float: left;  }
+    .fenline{  height: 18px;
+        width: 1px;
+        background-color: #999;
+        float: left;
+        margin-top: 24px;  }
+    .logout{
+        float: right;
+        display: inline-block;
+        color: #999;
+        width: 64px;
+
+    }
+    .logout:hover{
+        color: rgba(152,152,152,0.8);
+        text-decoration: none;
+    }
+    /*头部二次修改*/
+    .nav>li>a:focus {
+        color: #fff;
+    }
+    a:focus{
+        outline: none;
+    }
+    .footerLink>a:hover{
+        color: rgba(217,186,131,1);
+    }
+    .list-inline>li>a:hover{
+        opacity: 0.8;
+    }
+    .nav>li>a:focus {
+        color: #999;
+    }
+    input:-webkit-autofill {
+        transition: background-color 5000s ease-in-out 0s,color 5000s ease-in-out 0s ;
+
+    }
+</style>
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/"
+    };
+</script>
+<script src="./忘记密码_files/jquery-1.10.2.min.js.下载"></script>
+<script src="./忘记密码_files/jquery-migrate-1.2.1.js.下载"></script>
+<script src="./忘记密码_files/wind.js.下载"></script><script type="text/javascript" src="./忘记密码_files/ajaxForm.js.下载"></script><script type="text/javascript" src="./忘记密码_files/noty.js.下载"></script><script type="text/javascript" src="./忘记密码_files/jquery.validate.js.下载"></script>
+	
+</head>
+
+<body class="body-white" style="">
+<nav class="navbar navbar-color navbar-fixed-top active">
+    <div class="new-container active">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            &nbsp;
+            <a href="http://www.coin2p.com/"><img src="./忘记密码_files/logocf.png" height="45" style="margin-top:11px; margin-right:6px;margin-left: 20px"></a>
+        </div>
+
+        <div class="collapse navbar-collapse active navpos" id="bs-example-navbar-collapse-1">
+            <ul id="main-menu" class="nav navbar-nav active">
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="http://www.coin2p.com/" target="">
+                        首页                        </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="http://www.coin2p.com/portal/c2c/buycoin" target="">
+                        购买                        </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="http://www.coin2p.com/portal/c2c/sellcoin" target="">
+                        出售                        </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="javascript:void (0)" target="">
+                        关于點點                       </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="javascript:void (0)" target="">
+                        个人中心                        </a>
+
+                </li><li class="menu-item menu-item-level-1">
+
+                <a href="javascript:void (0)" target="">
+                    交易须知                        </a>
+
+            </li>
+
+            </ul>
+
+            <div class="navr">
+                <ul class="nav navbar-nav navbar-right" id="main-menu-user">
+
+                    <li class="dropdown user  offline" style="display: list-item;">
+                        <!--登陆后-->
+                        <div  style="display: none">
+                            <div class="fenline"></div>
+                            <div class="dropdown-toggle new-user1"  href="http://www.coin2p.com/user/profile/center.html#">
+                                <img src="./忘记密码_files/user.png" class="headicon" width="24" height="24">
+                                <span class="user-nickname">187****9629</span>
+                                <a class="logout" href="javascript:void (0)">退出</a>
+                            </div>
+                        </div>
+                        <!--登陆后-->
+
+
+                        <!--登陆前-->
+                        <a class="dropdown-toggle new-user" data-toggle="dropdown" href="javascript:void (0)">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立即登录
+                        </a>
+                        <!--登陆前-->
+                    </li>
+                </ul>
+                <div class="new-dropdown" style="display: list-item;">
+                    <a class="dropdown-toggle new-lanuage" data-toggle="dropdown" href="javascript:void (0)">
+                        <!--<img src="./忘记密码_files/headicon.png" class="headicon">-->
+
+                        中文简体 &nbsp;<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <!--<li><a href="javascript:void (0)">English</a></li>-->
+                        <li><a href="javascript:void (0)">中文繁体</a></li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right" style="display:none;" method="post" action="http://www.coin2p.com/portal/search/index.html">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="Search" value="">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Go" style="margin:0">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="regcontainer tc-main">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <span class="text-center">忘记密码</span>
+
+                        <div class="tab-content">
+                                    <div class="tab-pane active" id="mobile">
+                        <form class="js-ajax-form" action="http://www.coin2p.com/user/login/passwordreset.html" method="post" novalidate="novalidate">
+
+                            <div class="form-group phone">
+                                <a href="javascript:void (0)">+86   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="fa fa-angle-down"></i></a>
+                                <input type="text" name="username" placeholder="手机号" class="form-control" id="js-mobile-input">
+                            </div>
+                            <div class="form-group">
+                                <div class="authCodef" style="position: relative;">
+                                    <input type="text" name="captcha" placeholder="验证码" class="form-control" >
+                                    <img src="./忘记密码_files/new.html" onclick="this.src=&#39;/captcha/new.html?height=38&amp;width=160&amp;font_size=20&amp;time=&#39;+Math.random();" title="换一张" class="captcha captcha-img verify_img" style="cursor: pointer;">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="phoneCode" style="position: relative;">
+                                    <input type="text" name="verification_code" placeholder="手机验证码" style="width:200px;float: left" class="form-control valid" aria-invalid="false">
+                                    <a class="btn js-get-mobile-code"  data-wait-msg="[second]秒后才能再次获取" data-mobile-input="#js-mobile-input" data-url="/user/verification_code/send.html">获取手机验证码</a>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="密码6-24位数字、字母、字符" class="form-control valid" aria-invalid="false" autocomplete="new-password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="请再次输入密码" class="form-control valid" aria-invalid="false" autocomplete="new-password">
+                            </div>
+
+
+
+                            <div class="form-group regSubmit">
+                                <button class="btn btn-block js-ajax-submit" type="submit" data-wait="1500" style="margin-left: 0px; color:#fff ">确定修改密码
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                                <div class="tab-pane " id="email">
+                    <form class="js-ajax-form" action="http://www.coin2p.com/user/login/passwordreset.html" method="post" novalidate="novalidate">
+
+                        <div class="form-group">
+                            <input type="text" name="username" placeholder="邮箱" class="form-control" id="js-email-input">
+                        </div>
+
+                        <div class="form-group">
+                            <div style="position: relative;">
+                                <input type="text" name="verification_code" placeholder="邮件验证码" style="width:170px;" class="form-control">
+                                <a class="btn btn-success js-get-email-code" style="width: 163px;position: absolute;top:0;right: 0;" data-wait-msg="[second]秒后才能再次获取" data-email-input="#js-email-input" data-url="/user/verification_code/send.html" data-init-second-left="60">获取邮箱验证码</a>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="密码" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <div style="position: relative;">
+                                <input type="text" name="captcha" placeholder="验证码" class="form-control" style="width: 170px;float: left;margin-right: 30px">
+                                <img src="./忘记密码_files/new.html" onclick="this.src=&#39;/captcha/new.html?height=38&amp;width=160&amp;font_size=20&amp;time=&#39;+Math.random();" title="换一张" class="captcha captcha-img verify_img" style="cursor: pointer;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block js-ajax-submit" type="submit" style="margin-left: 0px;">确定
+                            </button>
+                        </div>
+
+                        <div class="form-group" style="text-align: center;">
+                            <ul class="list-inline">
+                                <li><a href="http://www.coin2p.com/user/register/index.html">现在注册</a></li>
+                                <li><a href="http://www.coin2p.com/user/login/index.html">现在登录</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- /container -->
+<div class="footer">
+    <div class="footerContent">
+        <div class="footerLeft">
+            <div class="footerLink">
+                <span>
+                    交易平台
+                </span>
+                <a href="">收费标准</a>
+                <a href="">快速买入</a>
+                <a href="">快速卖出</a>
+            </div>
+            <div class="footerLink">
+                <span>
+                    我的點點
+                </span>
+                <a href="">立即注册</a>
+                <a href="">转入货币</a>
+                <a href="">查看收益</a>
+            </div>
+            <div class="footerLink">
+                <span>
+                    条款声明
+                </span>
+                <a href="">隐私声明</a>
+                <a href="">服务条款</a>
+                <a href="">法律声明</a>
+            </div>
+
+            <p>币點點  &nbsp;©2018 Points Digital Trading Limited 版权所有. </p>
+            <p>币點點  &nbsp;Copyright ©2018 Points Digital Trading Limited. All Rights Reserved.</p>
+        </div>
+        <div class="footerRight">
+            <img src="./忘记密码_files/footerlogo.png" alt="">
+            <span>咨询电话：<b>+852 81799553</b></span>
+            <ul>
+                <li>
+                    <span>伙伴推荐：</span>
+                </li>
+                <li>
+                    <img src="./忘记密码_files/partner1.png" alt="">
+                </li>
+                <li>
+                    <img src="./忘记密码_files/partner2.png" alt="">
+                </li>
+                <li>
+                    <img src="./忘记密码_files/partner3.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./忘记密码_files/bootstrap.min.js.下载"></script>
+    <script src="./忘记密码_files/frontend.js.下载"></script>
+	<script>
+	$(function(){
+		$("#main-menu li.dropdown").hover(function(){
+			$(this).addClass("open");
+		},function(){
+			$(this).removeClass("open");
+		});
+		
+		$("#main-menu a").each(function() {
+			if ($(this)[0].href == String(window.location)) {
+				$(this).parentsUntil("#main-menu>ul>li").addClass("active");
+			}
+		});
+		
+		$.post("/user/index/islogin.html",{},function(data){
+		    console.log(data);
+			if(data.code==1){
+				if(data.data.user.avatar){
+				}
+
+				$("#main-menu-user span.user-nickname").text(data.data.user.user_nickname?data.data.user.user_nickname:data.data.user.user_login);
+				$("#main-menu-user li.login").show();
+                $("#main-menu-user li.offline").hide();
+
+			}
+
+			if(data.code==0){
+                $("#main-menu-user li.login").hide();
+				$("#main-menu-user li.offline").show();
+			}
+
+		});
+
+        ;(function($){
+			$.fn.totop=function(opt){
+				var scrolling=false;
+				return this.each(function(){
+					var $this=$(this);
+					$(window).scroll(function(){
+						if(!scrolling){
+							var sd=$(window).scrollTop();
+							if(sd>100){
+								$this.fadeIn();
+							}else{
+								$this.fadeOut();
+							}
+						}
+					});
+					
+					$this.click(function(){
+						scrolling=true;
+						$('html, body').animate({
+							scrollTop : 0
+						}, 500,function(){
+							scrolling=false;
+							$this.fadeOut();
+						});
+					});
+				});
+			};
+		})(jQuery); 
+		
+		$("#backtotop").totop();
+		
+		
+	});
+	</script>
+
+
+
+</body></html>

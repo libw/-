@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://www.coin2p.com/user/profile/center.html -->
+<html class=" js no-mobile desktop no-ie chrome chrome63 user-section profile-section w-1920 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 gt-1440 gt-1680 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface" id="center-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>个人中心</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<meta name="author" content="ThinkCMF">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Set render engine for 360 browser -->
+<meta name="renderer" content="webkit">
+
+<!-- No Baidu Siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<!-- HTML5 shim for IE8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="./个人中心_files/favicon.ico" type="image/ico">
+<link href="./个人中心_files/bootstrap.min.css" rel="stylesheet">
+<link href="./个人中心_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="/themes/simpleboot3/public/assets/simpleboot3/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link href="./个人中心_files/style.css" rel="stylesheet">
+<style>
+    /*html{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}*/
+    #backtotop {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+        font-size: 50px;
+        z-index: 9999;
+    }
+
+    #backtotop:hover {
+        color: #333
+    }
+
+    #main-menu-user li.user {
+        display: none
+    }
+</style>
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/"
+    };
+</script>
+<script src="./个人中心_files/jquery-1.10.2.min.js"></script>
+<script src="./个人中心_files/jquery-migrate-1.2.1.js"></script>
+<script src="./个人中心_files/wind.js.下载"></script>
+
+<style>
+.control-label {
+	font-weight: bold;
+	float: left;
+	width: 70px;
+}
+
+/*修改*/
+.navbar-nav{
+    box-sizing: border-box;
+}
+.navbar-nav>li>a{
+
+    padding: 0 20px;
+    height: 68px;
+    line-height: 68px;
+}
+.navbar-nav>li>a:hover{
+    text-decoration: none;
+}
+
+body{
+    background-color: #484c58!important;
+}
+ul,li{
+    list-style: none;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+
+    border-color: rgba(217,186,131,1);
+}
+.navbar-color{
+    background-color: transparent!important;
+}
+.navbar{
+    min-height: 68px;
+    margin-bottom: 0;
+}
+#main-menu{
+    margin-left: 100px;
+}
+.menu-item:hover{
+    background-color: transparent;
+}
+.menu-item>a{
+    font-size:18px;
+    color:rgba(152,152,152,1);
+}
+.menu-item>a:hover{
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(217,186,131,1);
+    color: rgba(217,186,131,1);
+}
+.new-container{
+    width: 100%;
+    height:68px;
+    background:rgba(45,49,59,0.9);
+}
+.offline{
+    margin-right: 15px;
+
+}
+.nav>.offline>a{
+    transition: 0.5s all;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+
+    background-color: transparent;
+
+}
+.nav>.offline>a:hover,.nav>.offline>a:focus,.nav>.offline>a:focus{
+    background-color: rgba(217,186,131,0.8);
+    opacity: 0.8;
+    color: #fff;
+
+}
+.active>a{
+    color: rgba(217,186,131,1);
+    border-bottom: 2px solid rgba(217,186,131,1);
+}
+.new-user{
+    width: 240px;
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    line-height: 68px;
+    text-align: center;
+    background-color: rgba(217,186,131,1);
+}
+.new-user1{
+    width: 240px;
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    line-height: 68px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.new-user1>img{
+    float: left;
+    margin-top: 18px!important;
+}
+.new-user1>span{
+    float: left;
+}
+.fenline{
+    height: 18px;
+    width: 1px;
+    background-color: #999;
+    float: left;
+    margin-top: 24px;
+}
+.logout{
+    float: right;
+    display: inline-block;
+    color: #999;
+    width: 80px;
+
+}
+.logout:hover{
+    color: rgba(152,152,152,0.8);
+}
+.new-lanuage{
+
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    line-height: 68px;
+    text-align: center;
+
+}
+.new-dropdown{
+    float: right;
+    margin-right: 40px;
+}
+.new-dropdown>a{
+    text-decoration: none;
+    color:rgba(217,186,131,1);
+}
+.new-dropdown>a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.dropdown-menu{
+    min-width: 125px;
+    /*height: 96px;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgba(45,49,59,0.9);
+}
+.dropdown-menu.pull-right {
+    right: 260px;
+    left: auto;
+}
+a:hover{
+    text-decoration: none;
+}
+.dropdown-menu>li{
+    height: 48px;
+}
+.dropdown-menu>li>a{
+    line-height: 48px;
+    color: rgba(217,186,131,1);
+    padding: 0;
+    padding-left: 15px;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+
+    background:rgba(217,186,131,1);
+}
+.list-group>a{
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    color: #999;
+    font-size: 20px;
+    line-height: 60px;
+    padding-left: 20px;
+    border: 0;
+    border-left: 5px solid transparent;
+    margin-bottom: 0;
+    display: block;
+}
+.list-group>a>img{
+   margin-right: 18px;
+
+}
+.list-group-item{
+    padding: 0;
+}
+.list-group>a:hover{
+    background-color: #23262e;
+    /*border-left: 5px solid rgba(217,186,131,1);*/
+}
+.newList-group{
+    width: 200px;
+    background-color: #2D313B;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #23262e;
+    padding-top: 64px;
+    font-size: 14px;
+    border-top: 10px solid rgba(217,186,131,1);
+}
+.footer p{
+    margin: 0;
+}
+.footerLink{
+    color:rgba(152,152,152,1);
+    margin-bottom: 26px;
+}
+.footerLink>span{
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 60px;
+}
+.footerLink>a{
+    color: #999;
+    padding: 0 40px;
+    border-right: 1px solid #484c58;
+}
+.footerLink>a:last-child{
+    border-right: none;
+}
+.footerLink>a:hover{
+    color: rgba(152,152,152,0.8);
+}
+.footerLeft>p{
+    color:#A7A7A7;
+    font-size: 12px;
+    line-height: 20px;
+}
+.footerContent{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footerLeft{
+    float: left;
+    width: 730px;
+    border-right: 1px solid #484c58;
+    margin-right: 40px;
+}
+.footerLeft>ul{
+    display: block;
+    padding-left: 0;
+    line-height: 105px;
+    list-style: none;
+    width: 100%;
+    height: 98px;
+}
+.footerLeft>ul>li{
+    float: left;
+    margin-right: 100px;
+}
+.footerLeft>ul>li>a{
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+.footerLeft>ul>li>a:hover{
+    opacity: 0.8;
+}
+.footerLeft>p{
+    font-size: 12px;
+    line-height: 20px;
+    color:rgba(167,167,167,1);
+}
+.footerRight{
+    float: left;
+    width: 420px;
+}
+.footerRight>img{
+    display: block;
+}
+.kong{
+    width: 100%;
+    height: 24px;
+}
+.footerRight>img{
+    width: 200px;
+    height: 70px;
+}
+.footerRight>span{
+    font-size: 18px;
+    color:#999;
+    line-height: 64px;
+    margin-top: 20px;
+    display: block;
+}
+.footerRight>ul{
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    color:#999;
+    margin-top: -20px;
+}
+.footerRight>ul>li{
+    float: left;
+    width: 110px;
+    height: 40px;
+    margin-right: 15px;
+    padding-top: 20px;
+}
+.footerRight>ul>li:last-child{
+    width: 50px;
+    padding-top: 0;
+}
+.footerRight>ul>li:first-child{
+    width: 90px;
+}
+.navbar .nav .user{
+    line-height: 0;
+}
+.nav-tabs>li>span{
+        background-color: transparent;
+        color: #999;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 64px;
+    }
+.nav-tabs{
+    border-bottom: 0;
+}
+.tabs{
+    width: 980px;
+    margin-left: 20px;
+    padding: 0 20px;
+    background-color:rgba(45,49,59,1);
+    height: 720px;
+    color: #999;
+}
+.gerenedit{
+     width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(217,186,131,1);
+    border-radius: 5px;
+    color: rgba(217,186,131,1);
+    transition: 0.5s all;
+    outline: none;
+}
+.gerenedit:focus{
+    outline: none;
+}
+.gerenedit:hover{
+    background-color: rgba(217,186,131,1);
+    color: #fff;
+    border-color: transparent;
+
+}
+.form-group1>label{
+    color: #999;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 64px;
+    margin-bottom: 0;
+}
+.js-ajax-form input{
+    background-color: transparent!important;
+    border: 1px solid #484c58;
+    border-radius: 5px;
+    color: #fff;
+}
+.js-ajax-form input{
+    background-color: transparent!important;
+    border: 1px solid #484c58;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.newForm-control{
+    color: #999;
+    font-size: 12px;
+    display: block;
+    margin-top: 25px;
+}
+.form-control:focus{
+    border-color:rgba(217,186,131,1);
+}
+.tc-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.list-group{
+    margin-bottom: 0;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+a.list-group-item:focus{
+    background-color: #23262e;
+    border-left: 5px solid rgba(217,186,131,1);
+}
+.list-group>a.list-group-itemative{
+    background-color: #23262e;
+    border-left: 5px solid rgba(217,186,131,1);
+    color: rgba(217,186,131,1);
+}
+.form-group1>button{
+    margin-top: 37px;
+    width: 330px;
+    outline: none;
+}
+.nav-tabs>li.active>a{
+    background-color: transparent;
+    border: 0;
+    color: rgba(217,186,131,1);
+    font-weight: bold;
+}
+.nav-tabs>li{
+    width: 49%;
+}
+.nav-tabs>li>a{
+    text-align: center;
+    border: 0;
+    color: #999;
+
+    font-size: 20px;
+    line-height: 70px;
+    padding: 0;
+}
+.nav-tabs>li>a:hover{
+    color: rgba(217,186,131,1);
+}
+.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    background-color: transparent;
+    border: 0;
+    color: rgba(217,186,131,1);
+    font-weight: bold;
+}
+.pzero{
+    padding: 0;
+}
+.table-bordered{
+    border: 0;
+}
+
+.table>thead>tr>th{
+    padding: 0;
+    font-size: 14px;
+    color: #999;
+    line-height: 32px;
+    text-align: center;
+    border-bottom:0;
+}
+.table>thead>tr>th:first-child{
+    padding-left: 15px;
+    text-align: left;
+}
+.table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+    padding: 0;
+    text-align: center;
+}
+.table-bordered>thead>tr>th,.table-bordered>thead>tr>td{
+    border:none;
+}
+.table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th,  .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{
+    border-color: #484c58;
+    font-size: 12px;
+    line-height: 60px;
+}
+.dingTable>tbody>tr>td{
+    border-left: 1px solid ;
+}
+.dingTable>tbody>tr>td:first-child{
+    border-left: none;
+}
+table a:not(.btn), .table a:not(.btn){
+    text-decoration: none;
+}
+.chkan>a{
+    width: 70px;
+    height: 26px;
+    display: block;
+    line-height: 24px;
+    text-align: center;
+}
+
+.dingTable>tbody>tr>td:first-child{
+    text-align: left;
+    padding-left: 15px;
+    width: 150px;
+}
+.dingTable>thead>tr>td:first-child{
+    text-align: left;
+    padding-left: 15px;
+    width: 150px;
+}
+.dingTable>tbody>tr>td:nth-child(2){
+    width: 90px;
+
+}
+.dingTable>tbody>tr>td:nth-child(3){
+     width: 90px;
+
+ }
+.dingTable>tbody>tr>td:nth-child(4){
+     width: 90px;
+
+ }
+
+.dingTable>tbody>tr>td:last-child{
+    width: 103px;
+    padding-left: 17px;
+}
+.pagination{
+    margin-left: 15px;
+}
+.pagination>li{
+    margin-right: 6px;
+    display: block;
+    float: left;
+}
+.pagination>.disabled>span{
+    color: rgba(217,186,131,1);
+    border-radius: 5px;
+
+    border-color: rgba(217,186,131,1);
+    background-color: transparent;
+}
+.pagination>li>a, .pagination>li>span{
+    color: rgba(217,186,131,1);
+    border-radius: 5px!important;
+
+    border-color: rgba(217,186,131,1);
+    background-color: transparent;
+}
+.pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #fff;
+    background-color: rgba(217,186,131,1);
+    border-color: rgba(217,186,131,1);
+    cursor: not-allowed;
+}
+.pagination>li>a:hover, .pagination>li>span:hover{
+    color: #fff;
+    background-color: rgba(217,186,131,1);
+    border-color: rgba(217,186,131,1);
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: rgba(217,186,131,1);
+    border-color: rgba(217,186,131,1);
+    cursor: default;
+}
+.form-group1>select{
+    background-color: transparent;
+    border-color: #484c58;
+    border-radius: 5px;
+    color: #999;
+}
+.form-group1>textarea{
+    height: 38px;
+    background-color: transparent;
+    border-color: #484c58;
+    border-radius: 5px;
+    color: #999;
+}
+.selectFile{
+    position: relative;
+    margin-top: 20px;
+}
+.selectFile>a{
+    display: block;
+    line-height: 38px;
+    text-align: center;
+}
+#avatar_uploder{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 120px;
+    height: 38px;
+    opacity: 0;
+}
+.avatar{
+    padding-top: 20px;
+}
+.tableh{
+    display: block;
+    line-height: 68px;
+    font-size: 20px;
+    color: #999;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.navbar .nav .user .headicon{
+    height: 24px;
+}
+/*头部二次修改*/
+#main-menu{  width: 1200px;
+    margin: 0 auto;  display: block;  }
+.navpos{  position: relative;  }
+.navbar-nav{  float: none;  }
+.navr{  position: absolute;
+    right: 0;
+    top: 0;  }
+.navbar .nav .user {  line-height: 0;  }
+.navbar .nav .user .headicon{  height: 24px;  }
+.new-user{  width: 240px;
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    line-height: 68px;
+    text-align: center;
+    background-color: rgba(217,186,131,1);  }
+.new-user1{  width: 240px;
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    line-height: 68px;
+    padding-left: 10px;
+    display: inline-block;  }
+.new-user1>img{  float: left;
+    margin-top: 18px!important;  }
+.new-user1>span{  float: left;  }
+.fenline{  height: 18px;
+    width: 1px;
+    background-color: #999;
+    float: left;
+    margin-top: 24px;  }
+.logout{
+    float: right;
+    display: inline-block;
+    color: #999;
+    width: 64px;
+
+}
+.logout:hover{
+    color: rgba(152,152,152,0.8);
+    text-decoration: none;
+}
+/*头部二次修改*/
+.js-ajax-form input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s,color 5000s ease-in-out 0s ;
+}
+.table-bordered>tbody>tr>td:first-child{
+    border-left: none;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1200px;
+    }
+}
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+
+    padding-left: 0;
+    padding-right: 0;
+}
+.nav>li>a:focus {
+    color: #999;
+}
+.footerLink>a:hover {
+    color: rgba(217,186,131,1);
+}
+
+.tablef>thead>tr>th:first-child{
+    text-align: center;
+}
+.tabley>thead>tr>th:first-child{
+    text-align: center;
+}
+.tabley>tbody>tr>td:nth-child(2){
+    width: 100px;
+}
+.tablef>tbody>tr>td:nth-child(3){
+    width: 100px;
+}
+.tablef>tbody>tr>td:nth-child(4){
+    width: 100px;
+}
+.tabley>tbody>tr>td:nth-child(3){
+    width: 100px;
+}
+.tabley>tbody>tr>td:nth-child(1){
+    width: 180px;
+}
+.tabley>tbody>tr>td:nth-child(5){
+    width: 100px;
+}
+.tablef>tbody>tr>td:nth-child(1){
+    width: 180px;
+}
+
+</style>
+</head>
+<body class="body-white" id="top" style="">
+<nav class="navbar navbar-color navbar-fixed-top active">
+    <div class="new-container active">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            &nbsp;
+            <a href="http://www.coin2p.com/"><img src="./个人中心_files/logocf.png" height="45" style="margin-top:11px; margin-right:6px;margin-left: 20px"></a>
+        </div>
+
+        <div class="collapse navbar-collapse active navpos" id="bs-example-navbar-collapse-1">
+            <ul id="main-menu" class="nav navbar-nav active">
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="http://www.coin2p.com/" target="">
+                        首页                        </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="http://www.coin2p.com/portal/c2c/buycoin" target="">
+                        购买                        </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="http://www.coin2p.com/portal/c2c/sellcoin" target="">
+                        出售                        </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1">
+
+                    <a href="javascript:void (0)" target="">
+                        关于點點                       </a>
+
+                </li>
+                <li class="menu-item menu-item-level-1 active">
+
+                    <a href="javascript:void (0)" target="">
+                        个人中心                        </a>
+
+                </li><li class="menu-item menu-item-level-1">
+
+                <a href="javascript:void (0)" target="">
+                    交易须知                        </a>
+
+            </li>
+        </ul>
+
+            <div class="navr">
+                <ul class="nav navbar-nav navbar-right" id="main-menu-user">
+
+                    <li class="dropdown user  offline" style="display: list-item;">
+                        <!--登陆后-->
+                        <div  style="display: none">
+                            <div class="fenline"></div>
+                            <div class="dropdown-toggle new-user1"  href="http://www.coin2p.com/user/profile/center.html#">
+                                <img src="./个人中心_files/user.png" class="headicon" width="24" height="24">
+                                <span class="user-nickname">187****9629</span>
+                                <a class="logout" href="javascript:void (0)">退出</a>
+                            </div>
+                        </div>
+                        <!--登陆后-->
+
+
+                        <!--登陆前-->
+                        <a class="dropdown-toggle new-user" data-toggle="dropdown" href="javascript:void (0)">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立即登录
+                        </a>
+                        <!--登陆前-->
+                    </li>
+                </ul>
+                <div class="new-dropdown" style="display: list-item;">
+                    <a class="dropdown-toggle new-lanuage" data-toggle="dropdown" href="javascript:void (0)">
+                        <!--<img src="./个人中心_files/headicon.png" class="headicon">-->
+
+                        中文简体 &nbsp;<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <!--<li><a href="javascript:void (0)">English</a></li>-->
+                        <li><a href="javascript:void (0)">中文繁体</a></li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right" style="display:none;" method="post" action="http://www.coin2p.com/portal/search/index.html">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="Search" value="">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Go" style="margin:0">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</nav>
+	<div class="container tc-main">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="list-group newList-group">
+                    <a class="list-group-item myWallet" href="javascript:void (0)"><img src="./个人中心_files/mywallet.png" alt=""> 我的钱包</a>
+                    <a class="list-group-item myChongbi" href="javascript:void (0)"><img src="./个人中心_files/chongzhi.png" alt="">  我要充币</a>
+                    <a class="list-group-item myTibi" href="javascript:void (0)"><img src="./个人中心_files/tibi.png" alt="">  我要提币</a>
+                    <a class="list-group-item myCaozuo" href="javascript:void (0)"><img src="./个人中心_files/caozuo.png" alt="">  交易记录</a>
+                    <a class="list-group-item myDingdan" href="javascript:void (0)"><img src="./个人中心_files/dingdan.png" alt="">  我的订单</a>
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/zhifu.png" alt="">  支付绑定</a>
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/xiugai.png" alt="">  修改资料</a>
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/xiugai2.png" alt="">  修改密码</a>
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/touxiang.png" alt="">  编辑头像</a>
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/bangding.png" alt="">  绑定账号</a>
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/shoucang.png" alt="">  我的收藏</a>
+                    <!--<a class="list-group-item" href="/portal/article/myindex.html"><i class="fa fa-file-text fa-fw"></i> 我的文章</a>-->
+                    <a class="list-group-item" href="javascript:void (0)"><img src="./个人中心_files/pinglun.png" alt=""> 我的评论</a>
+</div>
+
+
+			</div>
+            <div class="col-md-10 liPage mainPage">
+                <div class="tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><span>个人中心</span></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="one">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a href="http://www.coin2p.com/user/profile/avatar.html">
+                                        <img src="./个人中心_files/e1297d4370906c612d1c8eccf960bb77.jpg" class="headicon" width="128">
+                                    </a>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-user_nicename">昵称</label>
+                                        <div>水色丹青</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-sex">性别</label>
+                                        <div>
+                                            保密									</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-birthday">生日</label>
+                                        <div>1970-01-01</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-user_url">个人网址</label>
+                                        <div>未填写</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-signature">个性签名</label>
+                                        <div>未填写</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="http://www.coin2p.com/user/profile/edit.html" class="btn gerenedit">编辑</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 manyPage">
+                <div class="liPage none wallet">
+                    <div class="tabs newTabs">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+
+                                <form class="js-ajax-form" action="http://www.coin2p.com/user/profile/walletpost.html" method="post" novalidate="novalidate">
+                                    <div class="form-group1">
+                                        <label for="input-asset" style="display: block;">钱包余额</label>
+                                        <input type="text" class="form-control" id="input-asset" placeholder="" name="wallet_coin" value="0 BTC" readonly="">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-lock">被冻结资金</label>
+                                        <input type="text" class="form-control" id="input-lock" placeholder="" name="wallet_coin_lock" value="0" readonly="">
+                                    </div>
+                                    <div class="form-group">
+											<span class="newForm-control" >如果有被冻结的资金，因交易过程没有完成，交易没有完毕，会锁定资本
+											</span>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none chongBi">
+                    <div class="tabs">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <form class="js-ajax-form" action="http://www.coin2p.com/user/profile/wallet.html" method="post" novalidate="novalidate">
+                                    <div class="form-group1">
+                                        <label for="input-wallet_addr">充币地址</label>
+                                        <input type="text" class="form-control" id="input-wallet_addr" placeholder="" name="wallet_addr" value="3C2Zh7R64MKKvGyzFqJgZMLWFsatkFXvsj" readonly="">
+                                    </div>
+
+                                    <div class="form-group1">
+                                    <span style="display:block;margin-top: 20px">
+                                        充币说明 <br>
+                                        在您把币充入该账户地址之后，会自动到账，并生成充币记录。
+<br>
+此充值地址是多重签名地址，多重签名技术可能提升安全性，如果您的钱包不支持充值到多签地址，可以使用备用地址充值。 重要提示：禁止向BTC地址充值除BTC之外的资产，任何充入BTC地址的非BTC资产将不可找回。 <br>
+充值须知 <br>
+1、使用BTC地址充值需要1个网络确认才能到账，使用站内账户间转账无需网络确认，可以实时到账。
+                                    </span>
+
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none tiBi">
+                    <div class="tabs">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <form class="js-ajax-form" action="http://www.coin2p.com/user/profile/withdrawpost.html" method="post" novalidate="novalidate">
+                                    <div class="form-group1">
+                                        <label for="input-amount">提币金额</label>
+                                        <input type="text" class="form-control" id="input-amount" placeholder="提币金额" name="amount">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-fee">提币费用</label>
+                                        <input type="text" class="form-control" id="input-fee" placeholder="提币费用" name="fee" value="0.0005">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-coin_address">提币地址</label>
+                                        <input type="text" class="form-control valid" id="input-coin_address" placeholder="提币地址" name="coin_address" value="" aria-invalid="false" >
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-addr">用户密码</label>
+                                        <input type="password" class="form-control valid" id="input-addr" placeholder="用户密码" name="user_password" value="" aria-invalid="false" autocomplete="new-password">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="captcha">验证码</label>
+                                        <div style="position: relative;overflow: hidden">
+                                            <input type="text" id="captcha" name="captcha" placeholder="验证码" class="form-control captcha" style="width: 330px;float: left;margin-right: 30px">
+                                            <img src="./- 我要提币_files/new.html" onclick="this.src=&#39;/captcha/new.html?height=38&amp;width=330&amp;font_size=20&amp;time=&#39;+Math.random();" title="换一张" class="captcha captcha-img verify_img" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group1">
+                                        <button type="submit" class="btn js-ajax-submit gerenedit">提币</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none caoZuo">
+                    <div class="tabs pzero">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="http://www.coin2p.com/user/profile/walletlogs.html#one" data-toggle="tab">充币记录</a></li>
+                            <li style="width: 1px;height: 20px;background-color: #484c58;margin-top: 24px"></li>
+                            <li><a href="http://www.coin2p.com/user/profile/walletlogs.html#two" data-toggle="tab">提币记录</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <table class="table table-bordered tablef">
+                                    <thead style="background-color: #23262e">
+                                    <tr>
+                                        <th>充值时间</th>
+                                        <th>充值地址</th>
+                                        <th>充值金额</th>
+                                        <th>状态</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2017-11-30 10:35:28</td>
+                                        <td>3C2Zh7R64MKKvGyzFqJgZMLWFsatkFXvsj</td>
+                                        <td>1</td>
+                                        <td>wait</td>
+                                    </tr><tr>
+                                        <td>2017-11-30 10:35:28</td>
+                                        <td>3C2Zh7R64MKKvGyzFqJgZMLWFsatkFXvsj</td>
+                                        <td>1</td>
+                                        <td>wait</td>
+                                    </tr><tr>
+                                        <td>2017-11-30 10:35:28</td>
+                                        <td>3C2Zh7R64MKKvGyzFqJgZMLWFsatkFXvsj</td>
+                                        <td>1</td>
+                                        <td>wait</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pagination"></div>
+                            </div>
+
+                            <div class="tab-pane" id="two">
+                                <table class="table table-bordered tabley">
+                                    <thead style="background-color: #23262e">
+                                    <tr>
+                                        <th>提现时间</th>
+                                        <th>单号</th>
+                                        <th>提现金额</th>
+                                        <th>地址</th>
+                                        <th>状态</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2017-11-30 10:35:28</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>3C2Zh7R64MKKvGyzFqJgZMLWFsatkFXvsj</td>
+                                        <td>wait</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pagination"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none dingDan">
+                    <div class="tabs pzero">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="http://www.coin2p.com/user/profile/myorders.html#one" data-toggle="tab">我的买币订单</a></li>
+                            <li style="width: 1px;height: 20px;background-color: #484c58;margin-top: 24px"></li>
+                            <li><a href="http://www.coin2p.com/user/profile/myorders.html#two" data-toggle="tab">我的卖币订单</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <table class="table table-bordered dingTable">
+                                    <thead style="background-color: #23262e">
+                                    <tr>
+                                        <th>订单时间</th>
+                                        <th>卖家</th>
+                                        <th>买家</th>
+                                        <th>单号</th>
+                                        <th width="130">价格/CNY</th>
+                                        <th>数量</th>
+                                        <th width="130">总金额/CNY</th>
+                                        <th>交易方式</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:01:53</td>
+                                        <td>做市商003</td>
+                                        <td>水色丹青</td>
+                                        <td>65</td>
+                                        <td>108465.177</td>
+                                        <td>1</td>
+                                        <td>108465.177</td>
+                                        <td>银行</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/buyorder/id/65.html" class=" gerenedit">查看</a></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="pagination"><li class="disabled"><span><i class="fa fa-angle-left"></i></span></li> <li class="active"><span>1</span></li><li><a href="http://www.coin2p.com/user/profile/myorders.html?page=2">2</a></li> <li><a href="http://www.coin2p.com/user/profile/myorders.html?page=2"><i class="fa fa-angle-right"></i></a></li></div>
+                            </div>
+                            <div class="tab-pane " id="two">
+                                <table class="table table-bordered dingTable">
+                                    <thead style="background-color: #23262e">
+                                    <tr>
+                                        <th>订单时间</th>
+                                        <th>卖家</th>
+                                        <th>买家</th>
+                                        <th>单号</th>
+                                        <th width="130">价格/CNY</th>
+                                        <th>数量</th>
+                                        <th width="130">总金额/CNY</th>
+                                        <th>交易方式</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2017-12-11 16:33:05</td>
+                                        <td>水色丹青</td>
+                                        <td>做市商003</td>
+                                        <td>66</td>
+                                        <td>123123</td>
+                                        <td>123</td>
+                                        <td>15144129</td>
+                                        <td>支付宝</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/sellorder/id/66.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:33:05</td>
+                                        <td>水色丹青</td>
+                                        <td>做市商003</td>
+                                        <td>66</td>
+                                        <td>123123</td>
+                                        <td>123</td>
+                                        <td>15144129</td>
+                                        <td>支付宝</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/sellorder/id/66.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:33:05</td>
+                                        <td>水色丹青</td>
+                                        <td>做市商003</td>
+                                        <td>66</td>
+                                        <td>123123</td>
+                                        <td>123</td>
+                                        <td>15144129</td>
+                                        <td>支付宝</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/sellorder/id/66.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:33:05</td>
+                                        <td>水色丹青</td>
+                                        <td>做市商003</td>
+                                        <td>66</td>
+                                        <td>123123</td>
+                                        <td>123</td>
+                                        <td>15144129</td>
+                                        <td>支付宝</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/sellorder/id/66.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:33:05</td>
+                                        <td>水色丹青</td>
+                                        <td>做市商003</td>
+                                        <td>66</td>
+                                        <td>123123</td>
+                                        <td>123</td>
+                                        <td>15144129</td>
+                                        <td>支付宝</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/sellorder/id/66.html" class=" gerenedit">查看</a></td>
+                                    </tr><tr>
+                                        <td>2017-12-11 16:33:05</td>
+                                        <td>水色丹青</td>
+                                        <td>做市商003</td>
+                                        <td>66</td>
+                                        <td>123123</td>
+                                        <td>123</td>
+                                        <td>15144129</td>
+                                        <td>支付宝</td>
+                                        <td class="chkan"><a href="http://www.coin2p.com/portal/c2c/sellorder/id/66.html" class=" gerenedit">查看</a></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="pagination"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none settingPay">
+                    <div class="tabs">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+
+                                <form class="js-ajax-form" action="http://www.coin2p.com/user/profile/tradeaccountpost.html" method="post" novalidate="novalidate">
+                                    <div class="form-group1">
+                                        <label for="input-bank">银行卡</label>
+                                        <input type="text" class="form-control" id="input-bank" placeholder="卡号-银行名" name="bank" value="123123123">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-zfbao">支付宝</label>
+                                        <input type="text" class="form-control" id="input-zfbao" placeholder="支付宝账号" name="zfbao" value="123123123">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-weixin">微信</label>
+                                        <input type="text" class="form-control" id="input-weixin" placeholder="微信账号" name="weixin" value="123123123">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn js-ajax-submit gerenedit" style="margin-top: 35px">保存</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none reviseData">
+                    <div class="tabs">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <form class="js-ajax-form" action="http://www.coin2p.com/user/profile/editpost.html" method="post" novalidate="novalidate">
+                                    <div class="form-group1">
+                                        <label for="input-user_nickname">昵称</label>
+                                        <input type="text" class="form-control" id="input-user_nickname" placeholder="昵称" name="user_nickname" value="水色丹青">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-sex">性别</label>
+                                        <select class="form-control" id="input-sex" name="sex">
+                                            <option value="0" selected="">保密</option>
+                                            <option value="1">男</option>
+                                            <option value="2">女</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-user_url">身份证号</label>
+                                        <input class="form-control" type="text" id="input-user_cards" placeholder="" name="cards" value="123">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-birthday">生日</label>
+                                        <input class="form-control js-bootstrap-date" type="text" id="input-birthday" placeholder="1988-01-01" name="birthday" value="1970-01-01">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-user_url">个人网址</label>
+                                        <input class="form-control" type="text" id="input-user_url" placeholder="" name="user_url" value="">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-signature">个性签名</label>
+                                        <input  type="text" class="form-control" id="input-signature" placeholder="个性签名" name="signature"></input>
+                                    </div>
+                                    <div class="form-group" style="margin-top: 35px">
+                                        <button type="submit" class="btn js-ajax-submit gerenedit">保存</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none revisePassword">
+                    <div class="tabs">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <form class="js-ajax-form" action="http://www.coin2p.com/user/profile/passwordpost.html" method="post" novalidate="novalidate">
+                                    <div class="form-group1">
+                                        <label for="input-old_password">原始密码</label>
+                                        <input type="password" class="form-control" id="input-old_password" placeholder="原始密码" name="old_password"  autocomplete="new-password">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-password">新密码</label>
+                                        <input type="password" class="form-control" id="input-password" placeholder="新密码" name="password"  autocomplete="new-password">
+                                    </div>
+                                    <div class="form-group1">
+                                        <label for="input-repassword">重复密码</label>
+                                        <input type="password" class="form-control" id="input-repassword" placeholder="重复密码" name="repassword"  autocomplete="new-password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn js-ajax-submit gerenedit" style="margin-top: 35px">保存</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none reviseAvatar">
+                    <div class="tabs avatar">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <img src="./个人中心_files/e1297d4370906c612d1c8eccf960bb77.jpg" class="headicon" width="128">
+                                <div class="selectFile">
+                                    <a class="gerenedit" href="javascript:void (0)">选择文件</a>
+                                    <input type="file" onchange="avatar_upload(this)" id="avatar_uploder" name="file">
+                                </div>
+
+                                <div class="uploaded_avatar_area">
+                                    <div class="uploaded_avatar_btns">
+                                        <a class="btn confirm_avatar_btn gerenedit" onclick="update_avatar()">确定</a>
+                                        <a class="btn gerenedit" onclick="reloadPage()">取消</a>
+                                    </div>
+                                </div>
+                                <p class="help-block">头像支持jpg,png,jpeg格式,文件大小最大不能超过1M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none bindAccount">
+                    <div class="tabs">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <div class="form-group1">
+                                    <label for="js-mobile">手机号</label>
+                                    <div class="js-ajax-form" style="position: relative;height: 38px;">
+                                        <input type="text" class="form-control" placeholder="邮箱" id="js-mobile" name="mobile" value="18729029629" disabled="">
+                                    </div>
+                                </div>
+                                <!--<form class="js-ajax-form" action="http://www.coin2p.com/user/profile/bindingemail.html" method="post" novalidate="novalidate">-->
+                                    <!--<div class="form-group1">-->
+                                        <!--<label for="js-email-input">邮箱<span>（未绑定<span> &lt;!&ndash;邮箱地址 &ndash;&gt;</span>）</span></label>-->
+                                        <!--<div style="position: relative;height: 38px;">-->
+                                            <!--<input type="text" class="form-control" placeholder="邮箱" id="js-email-input" name="username" style="width: 220px;float: left;margin-right: 20px">-->
+                                            <!--<input type="text" class="form-control" placeholder="邮件验证码" name="verification_code" style="width: 220px;float: left;margin-right: 20px">-->
+                                            <!--<a class="btn js-get-email-code gerenedit" style="width: 220px;float: left;margin-right: 20px;height: 38px" data-wait-msg="[second]后才能再次获取" data-email-input="#js-email-input" data-url="/user/verification_code/send.html" data-init-second-left="60">获取邮箱验证码</a>-->
+                                            <!--<button type="submit" class="btn js-ajax-submit gerenedit" style="width: 220px;height: 38px;position: absolute;top:0;right: 0;">验证</button>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none shouCang">
+                    <div class="tabs pzero">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <span class="tableh">
+                                    收藏列表
+                                </span>
+                                <table class="table table-bordered">
+                                    <thead style="background-color: #23262e">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>标题</th>
+                                        <th>描述</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div class="pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liPage none pingLun">
+                    <div class="tabs pzero">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="one">
+                                <span class="tableh">
+                                    评论列表
+                                </span>
+                                <table class="table table-bordered">
+                                    <thead style="background-color: #23262e">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>评论内容</th>
+                                        <th width="150">评论时间</th>
+                                        <th width="150">操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <ul class="pagination"></ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+
+
+
+<!-- Footer ================================================== -->
+
+<div class="footer">
+    <div class="footerContent">
+        <div class="footerLeft">
+            <div class="footerLink">
+                <span>
+                    交易平台
+                </span>
+                <a href="">收费标准</a>
+                <a href="">快速买入</a>
+                <a href="">快速卖出</a>
+            </div>
+            <div class="footerLink">
+                <span>
+                    我的點點
+                </span>
+                <a href="">立即注册</a>
+                <a href="">转入货币</a>
+                <a href="">查看收益</a>
+            </div>
+            <div class="footerLink">
+                <span>
+                    条款声明
+                </span>
+                <a href="">隐私声明</a>
+                <a href="">服务条款</a>
+                <a href="">法律声明</a>
+            </div>
+
+            <p>币點點  &nbsp;©2018 Points Digital Trading Limited 版权所有. </p>
+            <p>币點點  &nbsp;Copyright ©2018 Points Digital Trading Limited. All Rights Reserved.</p>
+        </div>
+        <div class="footerRight">
+            <img src="./个人中心_files/footerlogo.png" alt="">
+            <span>咨询电话：<b>+852 81799553</b></span>
+            <ul>
+                <li>
+                    <span>伙伴推荐：</span>
+                </li>
+                <li>
+                    <img src="./个人中心_files/partner1.png" alt="">
+                </li>
+                <li>
+                    <img src="./个人中心_files/partner2.png" alt="">
+                </li>
+                <li>
+                    <img src="./个人中心_files/partner3.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div id="backtotop">
+    <i class="fa fa-arrow-circle-up"></i>
+</div>
+
+<!-- /container -->
+<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./个人中心_files/bootstrap.min.js.下载"></script>
+    <script src="./个人中心_files/frontend.js.下载"></script>
+	<script>
+	$(function(){
+		$("#main-menu li.dropdown").hover(function(){
+			$(this).addClass("open");
+		},function(){
+			$(this).removeClass("open");
+		});
+
+		$("#main-menu a").each(function() {
+			if ($(this)[0].href == String(window.location)) {
+				$(this).parentsUntil("#main-menu>ul>li").addClass("active");
+			}
+		});
+
+		$.post("/user/index/islogin.html",{},function(data){
+		    console.log(data);
+			if(data.code==1){
+				if(data.data.user.avatar){
+				}
+
+				$("#main-menu-user span.user-nickname").text(data.data.user.user_nickname?data.data.user.user_nickname:data.data.user.user_login);
+				$("#main-menu-user li.login").show();
+                $("#main-menu-user li.offline").hide();
+
+			}
+
+			if(data.code==0){
+                $("#main-menu-user li.login").hide();
+				$("#main-menu-user li.offline").show();
+			}
+
+		});
+
+        (function($){
+			$.fn.totop=function(opt){
+				var scrolling=false;
+				return this.each(function(){
+					var $this=$(this);
+					$(window).scroll(function(){
+						if(!scrolling){
+							var sd=$(window).scrollTop();
+							if(sd>100){
+								$this.fadeIn();
+							}else{
+								$this.fadeOut();
+							}
+						}
+					});
+
+					$this.click(function(){
+						scrolling=true;
+						$('html, body').animate({
+							scrollTop : 0
+						}, 500,function(){
+							scrolling=false;
+							$this.fadeOut();
+						});
+					});
+				});
+			};
+		})(jQuery);
+
+		$("#backtotop").totop();
+
+        $('.newList-group').delegate("a","click",function(){
+            //$('.liPage').addClass('none');
+            $('.newList-group').each(function (i) {
+                $(this).removeClass('list-group-itemative');
+            })
+            $(this).addClass('list-group-itemative');
+        });
+        $('.newList-group').find('a').click(function(){
+            $('.mainPage').css('display','none')
+            $('.newList-group').find('a').attr('class','');
+            $('.manyPage').find('.liPage').css('display','none')
+            $(this).attr('class','active');
+            $('.manyPage').find('.liPage').eq($(this).index()).css('display','block');
+        });
+
+//		$('.myTibi').click(function () {
+//		    $('.mainPage').addClass('none');
+//            //$('.wallet').addClass('block');
+//            $('.pingLun').addClass('block')
+//
+//            }
+//        )
+
+
+	});
+	</script>
+</body>
+</html>
